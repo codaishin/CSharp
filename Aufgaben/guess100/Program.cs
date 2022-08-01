@@ -46,13 +46,12 @@ do {
 		}
 	*/
 
-	/* alternative with switch expression:
-		var msg = "";
-		(won, msg) = couldParse switch {
+	/* alternative with switch expression
+		(won, var msg) = couldParse switch {
 			false => (false, "Not a number"),
 			true when guess < 0 || guess > 99 => (false, "Outside of allowed range"),
 			true when guess < random => (false, "Too low... LOL"),
-		 	true when guess > random => (false, "Too high... rofl"),
+			true when guess > random => (false, "Too high... rofl"),
 			_ => (true, "Correct, yeah"),
 		};
 		Console.WriteLine(msg);
