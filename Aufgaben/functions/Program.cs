@@ -2,7 +2,7 @@
 
 static int Power(int @base, int exponent) {
 	var power = 1;
-	for (int i = 0; i < exponent; ++i) {
+	for (var i = 0; i < exponent; ++i) {
 		power *= @base;
 	}
 	return power;
@@ -25,18 +25,13 @@ foreach (var person in people) {
 }
 
 static void AddPerson(List<Person> personList, int age, string name) {
-	var person = new Person {
+	personList.Add(new Person {
 		name = name,
 		age = age,
-	};
-	/* the above is shorthand for:
-		var person = new Person();
-		person.age = age;
-		person.name = name;*/
-	personList.Add(person);
+	});
 }
 
-struct Person {
+public struct Person {
 	public string name;
 	public int age;
 }

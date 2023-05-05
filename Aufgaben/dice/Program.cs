@@ -1,12 +1,6 @@
-﻿using System.Linq;
-using System;
-
-static DiceGroup[]? ToDiceGroups(string[] groups) {
+﻿static DiceGroup[]? ToDiceGroups(string[] groups) {
 	DiceGroup AssertNotNull(DiceGroup? diceGroup) {
-		if (!diceGroup.HasValue) {
-			throw new NullReferenceException();
-		}
-		return diceGroup.Value;
+		return diceGroup ?? throw new NullReferenceException();
 	}
 
 	try {
@@ -21,14 +15,11 @@ static DiceGroup[]? ToDiceGroups(string[] groups) {
 
 static DiceGroup? ToDiceGroup(string group) {
 	var diceData = group.Split("d");
-	if (
-		diceData.Length > 2 ||
+	return diceData.Length > 2 ||
 		!int.TryParse(diceData[0], out var count) || count < 1 ||
 		!int.TryParse(diceData[1], out var sides) || sides < 1
-	) {
-		return null;
-	}
-	return new DiceGroup { count = count, sides = sides };
+		? null
+		: new DiceGroup { count = count, sides = sides };
 }
 
 static int[][] Roll(DiceGroup[] dice, Random random) {

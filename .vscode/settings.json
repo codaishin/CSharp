@@ -1,8 +1,16 @@
 {
-    "editor.rulers": [80],
-    "editor.tabSize": 2,
-    "editor.insertSpaces": false,
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "cSpell.language": "en,de-de",
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.rulers": [
+		100,
+	],
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true,
+	},
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"omnisharp.enableEditorConfigSupport": true,
+	"cSpell.language": "en,de-de",
 }
