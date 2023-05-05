@@ -13,4 +13,11 @@
 	"files.insertFinalNewline": true,
 	"omnisharp.enableEditorConfigSupport": true,
 	"cSpell.language": "en,de-de",
+	"[html]": {
+		"editor.formatOnSave": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": false,
+			"source.organizeImports": false,
+		},
+	}
 }
