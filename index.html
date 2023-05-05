@@ -10,12 +10,28 @@
 		<title>CSharp Course</title>
 	</head>
 	<style>
-		section {
+		.reveal section {
 			top: 50%;
 			transform: translateY(-50%);
 			font-size: 1.3em;
+			text-align: left;
 		}
-		.reveal pre code {
+
+		.reveal section > p:first-child {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.reveal div.slides > section {
+			padding-left: 10%;
+		}
+
+		.reveal section pre {
+			max-width: 75%;
+			margin: 1em;
+		}
+
+		.reveal section pre code {
 			max-height: 800px;
 		}
 	</style>
