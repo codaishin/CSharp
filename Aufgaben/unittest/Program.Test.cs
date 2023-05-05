@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-class TestSum {
+public class TestSum {
 	[Test]
 	public void Sum4and4Is8() {
 		var result = Tools.Sum(4, 4);

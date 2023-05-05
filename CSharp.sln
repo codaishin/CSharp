@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aufgaben", "Aufgaben", "{198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bars", "Aufgaben\bars\bars.csproj", "{1A12EB42-FA42-4A1A-8A59-AB08F64FB878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dice", "Aufgaben\dice\dice.csproj", "{73755C39-9E54-4947-9898-31C49327307E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fibonacci", "Aufgaben\fibonacci\fibonacci.csproj", "{D7549068-B27B-4707-A778-CE17777B7DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "functions", "Aufgaben\functions\functions.csproj", "{FD28AF74-EFCB-449D-A75A-0C57179BF84E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guess100", "Aufgaben\guess100\guess100.csproj", "{18A52BDB-9A1F-49E0-9A34-6D7097FA8C65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld", "Aufgaben\helloworld\helloworld.csproj", "{1E90F16F-0D32-4911-A10D-2459DB51C245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unittests", "Aufgaben\unittest\unittests.csproj", "{0B4CEBA0-63E7-48E5-818E-32C4622110EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A12EB42-FA42-4A1A-8A59-AB08F64FB878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A12EB42-FA42-4A1A-8A59-AB08F64FB878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A12EB42-FA42-4A1A-8A59-AB08F64FB878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A12EB42-FA42-4A1A-8A59-AB08F64FB878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73755C39-9E54-4947-9898-31C49327307E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73755C39-9E54-4947-9898-31C49327307E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73755C39-9E54-4947-9898-31C49327307E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73755C39-9E54-4947-9898-31C49327307E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7549068-B27B-4707-A778-CE17777B7DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7549068-B27B-4707-A778-CE17777B7DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7549068-B27B-4707-A778-CE17777B7DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7549068-B27B-4707-A778-CE17777B7DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD28AF74-EFCB-449D-A75A-0C57179BF84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD28AF74-EFCB-449D-A75A-0C57179BF84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD28AF74-EFCB-449D-A75A-0C57179BF84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD28AF74-EFCB-449D-A75A-0C57179BF84E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A52BDB-9A1F-49E0-9A34-6D7097FA8C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A52BDB-9A1F-49E0-9A34-6D7097FA8C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A52BDB-9A1F-49E0-9A34-6D7097FA8C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A52BDB-9A1F-49E0-9A34-6D7097FA8C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E90F16F-0D32-4911-A10D-2459DB51C245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E90F16F-0D32-4911-A10D-2459DB51C245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E90F16F-0D32-4911-A10D-2459DB51C245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E90F16F-0D32-4911-A10D-2459DB51C245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4CEBA0-63E7-48E5-818E-32C4622110EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4CEBA0-63E7-48E5-818E-32C4622110EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4CEBA0-63E7-48E5-818E-32C4622110EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4CEBA0-63E7-48E5-818E-32C4622110EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A12EB42-FA42-4A1A-8A59-AB08F64FB878} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+		{73755C39-9E54-4947-9898-31C49327307E} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+		{D7549068-B27B-4707-A778-CE17777B7DB4} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+		{FD28AF74-EFCB-449D-A75A-0C57179BF84E} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+		{18A52BDB-9A1F-49E0-9A34-6D7097FA8C65} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+		{1E90F16F-0D32-4911-A10D-2459DB51C245} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+		{0B4CEBA0-63E7-48E5-818E-32C4622110EE} = {198CCB2E-EA3E-43F9-9AEC-E3DA718BA395}
+	EndGlobalSection
+EndGlobal
