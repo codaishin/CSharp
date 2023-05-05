@@ -1018,6 +1018,15 @@ var bar = new MyFoo{ ... };
 var foo = new MyBar{ ... };
 ```
 
+### Static using statement
+
+#### MyFileA.cs
+```csharp
+using static System.Console;
+
+WriteLine("can use all of Console's static members");
+```
+
 [back to top](#content)
 
 ## Generators
@@ -1200,12 +1209,7 @@ $ dotnet add package Nunit3TestAdapter
 
 ```csharp
 class Circle {
-	private double radius;
-
-	public double Radius {
-		get => this.radius;
-		set => this.radius = value;
-	}
+	public double radius;
 
 	public double Diameter {
 		get => this.radius * 2;
@@ -1238,32 +1242,24 @@ class Circle {
 
 ### Usage
 
+#### Instantiation and method calls
+
 ```csharp
-var circleA = new Circle { Radius = 4 };
-var circleB = new Circle { Radius = 3 };
+var circleA = new Circle { radius = 4 };
+var circleB = new Circle { radius = 3 };
 Console.WriteLine(circleA);
 Console.WriteLine(circleA.Area());
 Console.WriteLine(Circle.Merge(circleA, circleB));
 ```
 
-### Usage - Wrong access
-
-#### Can't access `private` variable
+#### Static vs non-static
 
 ```csharp
-Console.WriteLine(circleA.radius);  // will not compile
-```
+// will not compile: cannot call static methods on instance
+Console.WriteLine(circleA.Merge(circleA, circleB));
 
-#### Can't access `static` Method on an instance
-
-```csharp
-Console.WriteLine(circleA.Merge(circleA, circleB));  // will not compile
-```
-
-#### Can't access `non static` Method on the type
-
-```csharp
-Console.WriteLine(Circle.Area());  // will not compile
+// will not compile: cannot call instance method on class
+Console.WriteLine(Circle.Area());
 ```
 
 ### Interface - Definition
