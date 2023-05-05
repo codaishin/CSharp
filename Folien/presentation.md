@@ -162,52 +162,47 @@ struct Person {
 	public string name;
 	public int age;
 }
+```
 
-class Program {
-	public static void Main() {
-		var personA = new Person {
-			name = "Mouse",
-			age = 42,
-		};
-		var personB = new Person {
-			name = "Mouse",
-			age = 42,
-		};
+```csharp
+var personA = new Person {
+	name = "Mouse",
+	age = 42,
+};
+var personB = new Person {
+	name = "Mouse",
+	age = 42,
+};
 
-		Console.WriteLine(personA == personB);  // will not compile, no == method
-		Console.WriteLine(personA.name);
-		Console.WriteLine(personA.age);
-		personA.age = 33;
-	}
-}
-
+Console.WriteLine(personA == personB);  // will not compile, no == method
+Console.WriteLine(personA.name);
+Console.WriteLine(personA.age);
+personA.age = 33;
 ```
 
 ### Record
 
 ```csharp
-public record Person {
+record Person {
 	public string Name { get; init; } = "Anonymous";
 	public int Age { get; init; } = 0;
 };
+```
 
-class Program {
-	public static void Main() {
-		var personA = new Person {
-			Name = "Mouse",
-			Age = 42,
-		};
-		var personB = new Person {
-			Name = "Mouse",
-			Age = 42,
-		};
+```csharp
+var personA = new Person {
+	Name = "Mouse",
+	Age = 42,
+};
+var personB = new Person {
+	Name = "Mouse",
+	Age = 42,
+};
 
-		Console.WriteLine(personA == personB);  // true, because properties are equal
-		Console.WriteLine(person.Name);
-		Console.WriteLine(person.Age);
-		person.Age = 33;                        // will not compile, init only
-	}
-}
+Console.WriteLine(personA == personB);  // true, because properties are equal
+Console.WriteLine(person.Name);
+Console.WriteLine(person.Age);
+person.Age = 33;                        // will not compile, init only
 ```
 
 ### Tuple
@@ -232,15 +227,13 @@ enum MyEnum {
 	B = 1,
 	C = 2,
 }
+```
 
-class Program {
-	public static void Main() {
-		var value = MyEnum.B;
+```csharp
+var value = MyEnum.B;
 
-		Console.WriteLine(value);       // prints B
-		Console.WriteLine((int)value);  // prints 1
-	}
-}
+Console.WriteLine(value);       // prints B
+Console.WriteLine((int)value);  // prints 1
 ```
 
 ### Flag
@@ -252,18 +245,16 @@ enum MyFlag {
 	B = 0b0010,  // could also write 2
 	C = 0b0100,  // could also wrote 4
 }
+```
 
-class Program {
-	public static void Main() {
-		var value = MyFlag.B | MyFlag.C;
+```csharp
+var value = MyFlag.B | MyFlag.C;
 
-		Console.WriteLine(value);                    // prints B, C
-		Console.WriteLine((int)value);               // prints 6
-		Console.WriteLine(value.HasFlag(MyFlag.A));  // prints false
-		Console.WriteLine(value.HasFlag(MyFlag.B));  // prints true
-		Console.WriteLine(value.HasFlag(MyFlag.C));  // prints true
-	}
-}
+Console.WriteLine(value);                    // prints B, C
+Console.WriteLine((int)value);               // prints 6
+Console.WriteLine(value.HasFlag(MyFlag.A));  // prints false
+Console.WriteLine(value.HasFlag(MyFlag.B));  // prints true
+Console.WriteLine(value.HasFlag(MyFlag.C));  // prints true
 ```
 
 [back to top](#content)
@@ -287,6 +278,7 @@ Console.WriteLine(a);
 - then we copy the value of `a` into `b`
 - then we copy the value `66` into `b`
 - thus, we soo no changes in `a`
+
 ```console
 $ 42
 ```
@@ -306,6 +298,7 @@ Console.WriteLine(string.Join(", ", arrayA));
 - then we point `arrayB` towards the same array
 - then we modify that array through `arrayB`
 - thus, reading that array through `arrayA` will show the changes
+
 ```csharp
 $ 6, 6
 ```
