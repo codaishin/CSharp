@@ -4,7 +4,6 @@ using NUnit.Framework;
 [TestFixture]
 public class TestCalculate {
 	[Test]
-	[Ignore("TODO")]
 	public void Number() {
 		var result = Tools.Calculate("42");
 
@@ -12,7 +11,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void OtherNumber() {
 		var result = Tools.Calculate("46");
 
@@ -20,7 +18,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Add() {
 		var result = Tools.Calculate("4+2");
 
@@ -28,7 +25,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Subtract() {
 		var result = Tools.Calculate("4-3");
 
@@ -36,7 +32,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Multiply() {
 		var result = Tools.Calculate("4*3");
 
@@ -44,7 +39,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Divide() {
 		var result = Tools.Calculate("4/3");
 
@@ -52,7 +46,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Multiple() {
 		var result = Tools.Calculate("2*4-6");
 
@@ -60,7 +53,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void MultipleOrder() {
 		var result = Tools.Calculate("2+4*6");
 
@@ -68,7 +60,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void DivisionOrder() {
 		var result = Tools.Calculate("2+4/6");
 
@@ -76,7 +67,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void BracketsOrder() {
 		var result = Tools.Calculate("2*(4+2)");
 
@@ -84,7 +74,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void OpAfterBrackets() {
 		var result = Tools.Calculate("2*(4+2)+1");
 
@@ -92,7 +81,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void NestedBrackets() {
 		var result = Tools.Calculate("2*((4+2)*3)");
 
@@ -100,7 +88,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void FirstPositiveAdd() {
 		var result = Tools.Calculate("+2+3");
 
@@ -108,7 +95,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void FirstPositiveMultiply() {
 		var result = Tools.Calculate("+2*3");
 
@@ -116,7 +102,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Power() {
 		var result = Tools.Calculate("2^3");
 
@@ -124,7 +109,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void PowerOrder() {
 		var result = Tools.Calculate("3+2^3");
 
@@ -132,7 +116,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Complex() {
 		var dot_or_comma = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
 		var result = Tools.Calculate($"-2 + ((-15{dot_or_comma}4 + 6) * (1 + (-7))) + 10 ^ (2 * 3)");
