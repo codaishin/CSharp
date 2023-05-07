@@ -4,14 +4,12 @@ using NUnit.Framework;
 [TestFixture]
 public class TestParseDice {
 	[Test]
-	[Ignore("TODO")]
 	public void Dice1d4() {
 		var dice = Tools.ParseDice("1d4");
 		Assert.That(dice, Is.EqualTo((1, 4)));
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Dice2d8() {
 		var dice = Tools.ParseDice("2d8");
 		Assert.That(dice, Is.EqualTo((2, 8)));
@@ -32,7 +30,6 @@ public class TestRoll {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Dice1d4GetRandomArgs() {
 		_ = Tools
 			.Roll((1u, 4u), this.getRandom)
@@ -44,7 +41,6 @@ public class TestRoll {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Dice1d4UseResult() {
 		_ = Mock
 			.Get(this.getRandom)
@@ -59,7 +55,6 @@ public class TestRoll {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Dice2d8GetRandomArgs() {
 		_ = Tools
 			.Roll((2u, 8u), this.getRandom)
@@ -71,7 +66,6 @@ public class TestRoll {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Dice2d8UseResult() {
 		_ = Mock
 			.Get(this.getRandom)
@@ -90,7 +84,6 @@ public class TestRoll {
 [TestFixture]
 public class TestRollsToString {
 	[Test]
-	[Ignore("TODO")]
 	public void OneRoll() {
 		var rolls = new[] { new[] { 4u, } };
 		var str = Tools.RollsToString(rolls);
@@ -99,7 +92,6 @@ public class TestRollsToString {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void SeveralRolls() {
 		var rolls = new[] { new[] { 8u, 6u, 12u, } };
 		var str = Tools.RollsToString(rolls);
@@ -108,7 +100,6 @@ public class TestRollsToString {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void SeveralRollsWithMultipleGroups() {
 		var rolls = new[] {
 			new[] { 8u, 6u, 12u },
@@ -125,7 +116,6 @@ public class TestRollsToString {
 [TestFixture]
 public class TestSum {
 	[Test]
-	[Ignore("TODO")]
 	public void OneRoll() {
 		var rolls = new[] { new[] { 4u, } };
 		var sum = Tools.Sum(rolls);
@@ -134,7 +124,6 @@ public class TestSum {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void SeveralRolls() {
 		var rolls = new[] { new[] { 8u, 6u, 12u, } };
 		var sum = Tools.Sum(rolls);
@@ -143,7 +132,6 @@ public class TestSum {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void SeveralRollsWithMultipleGroups() {
 		var rolls = new[] {
 			new[] { 8u, 6u, 12u },
