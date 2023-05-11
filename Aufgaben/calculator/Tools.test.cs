@@ -4,7 +4,6 @@ using NUnit.Framework;
 [TestFixture]
 public class TestCalculate {
 	[Test]
-	[Ignore("TODO")]
 	public void Number() {
 		var result = Tools.Calculate("42");
 
@@ -12,7 +11,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void OtherNumber() {
 		var result = Tools.Calculate("46");
 
@@ -20,7 +18,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Add() {
 		var result = Tools.Calculate("4+2");
 
@@ -28,7 +25,13 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
+	public void AddLargerNumbers() {
+		var result = Tools.Calculate("40+2");
+
+		Assert.That(result, Is.EqualTo(42f));
+	}
+
+	[Test]
 	public void Subtract() {
 		var result = Tools.Calculate("4-3");
 
@@ -36,7 +39,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Multiply() {
 		var result = Tools.Calculate("4*3");
 
@@ -44,7 +46,6 @@ public class TestCalculate {
 	}
 
 	[Test]
-	[Ignore("TODO")]
 	public void Divide() {
 		var result = Tools.Calculate("4/3");
 
