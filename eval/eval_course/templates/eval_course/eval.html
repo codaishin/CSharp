@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<link rel="stylesheet" href="{% static 'eval_course.css' %}">
+</head>
+
+<body>
+	<form method="post">
+		{% csrf_token %}
+		{{ forms.management_form }}
+		{% for form in forms %}
+		<h2>
+			{{ form.instance.question.text }}
+		</h2>
+		<div class="answer">
+			{{ form.as_p }}
+			{{ form.non_form_errors }}
+		</div>
+		{% endfor %}
+		<input class="submit" type="submit" value="Absenden">
+	</form>
+</body>
+
+</html>

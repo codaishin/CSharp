@@ -1,0 +1,46 @@
+body {
+	margin: auto;
+	width: 600px;
+	font-family: Verdana, sans-serif;
+}
+
+label {
+	display: inline-block;
+	width: 20%;
+	text-align: end;
+	vertical-align: top;
+}
+
+textarea {
+	height: 3em;
+}
+
+h2 {
+	padding-top: 1em;
+}
+
+form {
+	margin-bottom: 5em;
+}
+
+.submit {
+	cursor: pointer;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	background-color: #5dbea3;
+	border: none;
+	padding: 1em;
+	border-radius: 1.3em;
+}
+
+.submit:hover {
+	background-color: #5adbb5;
+}
+
+.thanks {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
